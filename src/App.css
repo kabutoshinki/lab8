@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,13 @@
   to {
     transform: rotate(360deg);
   }
+} */
+a.navbar-brand{
+  margin-left: -35px;
+}
+.card-title{
+  font-weight: bold;
+}
+li{
+  line-height: 2.0;
 }
