@@ -66,8 +66,8 @@ const DishDetail = (props) => {
       <div></div>
     )
   } else {
-    const dishItem = this.renderDish(dish);
-    const dishComment = this.renderComments(dish.comments);
+    const dishItem = this.RenderDish(dish);
+    const dishComment = this.RenderComments(dish.comments);
     return (
       <div className='row'>
         <div className="col-12 col-md-5 m-1">{dishItem}</div>
