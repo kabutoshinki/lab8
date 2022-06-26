@@ -25,7 +25,7 @@ function About(props) {
 
     const leaders = props.leaders.map((leader) => {
         return (
-            <RenderLeader leader/>
+            <RenderLeader leader={leader}/>
         );
     });
 
