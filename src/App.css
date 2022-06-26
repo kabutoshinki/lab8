@@ -85,3 +85,6 @@ div.jumbotron{
   background: #9575CD ;
   color:floralwhite;
 }
+#header{
+  display: flex;
+}
