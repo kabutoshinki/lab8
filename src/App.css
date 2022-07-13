@@ -36,67 +36,94 @@
     transform: rotate(360deg);
   }
 } */
-a.navbar-brand{
+a.navbar-brand {
   margin-left: -35px;
 }
-.card-title{
+
+.card-title {
   font-weight: bold;
 }
-li{
+
+li {
   line-height: 2.0;
 }
 
-.row-header{
-  margin:0px auto;
-  padding:0px auto;
+.row-header {
+  margin: 0px auto;
+  padding: 0px auto;
 }
 
 .row-content {
-  margin:0px auto;
+  margin: 0px auto;
   padding: 50px 0px 50px 0px;
   border-bottom: 1px ridge;
-  min-height:400px;
+  min-height: 400px;
 }
 
-.footer{
+.footer {
   background-color: #D1C4E9;
-  margin:0px auto;
+  margin: 0px auto;
   padding: 20px 0px 20px 0px;
 }
+
 .jumbotron {
-  padding:70px 30px 70px 30px;
-  margin:0px auto;
-  background: #9575CD ;
-  color:floralwhite;
+  padding: 70px 30px 70px 30px;
+  margin: 0px auto;
+  background: #9575CD;
+  color: floralwhite;
 }
 
-address{
-  font-size:80%;
-  margin:0px;
-  color:#0f0f0f;
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
 }
 
 .navbar-dark {
   background-color: #512DA8;
 }
-div.jumbotron{
-  padding:70px 30px 70px 30px;
-  margin:0px auto;
-  background: #9575CD ;
-  color:floralwhite;
+
+div.jumbotron {
+  padding: 70px 30px 70px 30px;
+  margin: 0px auto;
+  background: #9575CD;
+  color: floralwhite;
 }
-#header{
+
+#header {
   display: flex;
 }
 
-button.btn-close{
+button.btn-close {
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/OOjs_UI_icon_close.svg/1200px-OOjs_UI_icon_close.svg.png);
   background-repeat: no-repeat;
   background-size: 16px 16px;
- width:1em;
- height:1em;
- border: 0;
- color: black;
- border-radius:0.25rem;
- opacity: .5;
+  width: 1em;
+  height: 1em;
+  border: 0;
+  color: black;
+  border-radius: 0.25rem;
+  opacity: .5;
+}
+
+.page-enter {
+  opacity: 0.01;
+  transform: translateX(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 300ms ease-in;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.page-exit-active {
+  opacity: 0.01;
+  transform: translateX(100%);
+  transition: all 300ms ease-out;
 }
