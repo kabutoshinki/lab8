@@ -109,7 +109,7 @@ function RenderDish({ dish }) {
             <Card>
                <CardImg top src={baseUrl + dish.image} alt={dish.name} />
                <CardBody>
-                  <CardTitle>{dish.name}</CardTitle>
+                  <CardTitle><h4 className="text-info">{dish.name}</h4></CardTitle>
                   <CardText>{dish.description}</CardText>
                </CardBody>
             </Card>
@@ -123,13 +123,13 @@ function RenderComments({ comments, postComment, dishId }) {
    if (comments != null) {
       return (
          <div className="col-12 col-md-5 m-1">
-            <h4>Comments</h4>
+            <h4 className="text-secondary">Comments</h4>
             <ul className="list-unstyled">
                <Stagger in>
                   {comments.map((comment) => {
                      return (
                         <Fade in>
-                           <li key={comment.id}>
+                           <li key={comment.name}>
                               <p>{comment.comment}</p>
                               <p>-- {comment.author} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(comment.date)))}</p>
                            </li>
@@ -176,11 +176,12 @@ const Dishdetail = (props) => {
             <div className="container">
                <div className="row">
                   <Breadcrumb>
+                     <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>
                      <BreadcrumbItem><Link to='/menu'>Menu</Link></BreadcrumbItem>
                      <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
                   </Breadcrumb>
                   <div className="col-12">
-                     <h3>{props.dish.name}</h3>
+                     <h3 className="text-secondary">{props.dish.name}</h3>
                      <hr />
                   </div>
                </div>

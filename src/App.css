@@ -45,7 +45,7 @@ a.navbar-brand {
 }
 
 li {
-  line-height: 2.0;
+  line-height: 1.5;
 }
 
 .row-header {
@@ -61,7 +61,7 @@ li {
 }
 
 .footer {
-  background-color: #D1C4E9;
+  background-color: #86d8ef;
   margin: 0px auto;
   padding: 20px 0px 20px 0px;
 }
@@ -80,13 +80,13 @@ address {
 }
 
 .navbar-dark {
-  background-color: #512DA8;
+  background-color: #08afc5;
 }
 
 div.jumbotron {
   padding: 70px 30px 70px 30px;
   margin: 0px auto;
-  background: #9575CD;
+  background: #02334d;
   color: floralwhite;
 }
 

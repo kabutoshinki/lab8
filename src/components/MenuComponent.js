@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-  Card, CardImg, CardBody,
-  CardTitle, Breadcrumb, BreadcrumbItem, CardText, CardSubtitle, CardImgOverlay
+  Card, CardImg,
+  CardTitle, Breadcrumb, BreadcrumbItem, CardImgOverlay
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
@@ -85,7 +85,7 @@ const Menu = (props) => {
             <BreadcrumbItem active>Menu</BreadcrumbItem>
           </Breadcrumb>
           <div className="col-12">
-            <h3>Menu</h3>
+            <h3 className="text-secondary">Menu</h3>
             <hr />
           </div>
         </div>
